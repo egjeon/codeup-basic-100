@@ -8,6 +8,8 @@ public class ch64 {
 		int a = sc.nextInt();
 		int b = sc.nextInt();
 		int c = sc.nextInt();
+		int min = (a < b && a < c) ? a : (b < c) ? b : c; 
+		System.out.println(min);
 		sc.close();
 	}
 }
