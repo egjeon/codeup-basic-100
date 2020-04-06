@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class ch99 {
 	public static void main(String[] args) {
-		//입력예시
 		//5 5
 		//3
 		//2 0 1 1
@@ -14,12 +13,9 @@ public class ch99 {
 		String input = sc.nextLine();
 		String[] strArr = input.split(" ");
 		int [][] arr = new int[Integer.parseInt(strArr[0])][Integer.parseInt(strArr[1])];
-	
-		//막대의 갯수
 		int n = sc.nextInt();sc.nextLine();
 		
 		for(int i=0; i<n; i++) {
-			//막대의 길이 length , 막대의 방향 d , 막대의 좌표(x,y)
 			int length,d,x,y;
 
 			String stickInfo = sc.nextLine();
@@ -27,8 +23,8 @@ public class ch99 {
 			
 			length = Integer.parseInt(stickArr[0]);
 			d = Integer.parseInt(stickArr[1]);
-			x = Integer.parseInt(stickArr[2])-1;
-			y = Integer.parseInt(stickArr[3])-1;
+			x = Integer.parseInt(stickArr[3])-1;
+			y = Integer.parseInt(stickArr[2])-1;
 			
 		    if(d == 0) {
                 for(int j = 0; j < length; j++) {
